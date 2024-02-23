@@ -1,0 +1,6 @@
+<form action="{{ form_url }}" method="POST">
+    <input value="{{ note.title if note is defined else '' }}" name="title" type="text" placeholder="Title for your note">
+    <input value="{{ note.text if note is defined else '' }}" name="text" type="text" placeholder="Paste your tetx here">
+    <button type="submit">{{ note_action }} Note</button>
+</form>
+

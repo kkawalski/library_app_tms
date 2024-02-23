@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    {% include 'note_create.html' %}
+
+    {% for note in notes %}
+        <p>
+            <a href="{{ url_for('notes.note_detail_update', note_id=note.id) }}">
+                {{ note.id }} {{ note.text }}
+            </a>
+        </p>
+    {% endfor %}
+
+{% endblock %}
+
+
+
