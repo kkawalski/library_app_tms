@@ -1,12 +1,12 @@
 # library_app_tms
 
-1. Create file **.env** with parameters from **.env.template**
-2. Create database, role and password
-3. Fill *DATABASE_URI* variable in **.env** file with the above credentials
-4. Create and activate virtual environment
+1. Создайте файла **.env** с параметрами из файла **.env.template**
+2. Создайте базу данных, пользователя и пароль
+3. Заполните переменную *DATABASE_URI* в файле **.env** с вышеуказанными данными
+4. Создайте и активируйте вирутальное окружение
     > python -m venv env
     
-    Or
+    В случае если не сработает команда выше, используйте python**3**
     
     > python3 -m venv env
 
@@ -21,7 +21,7 @@
     Linux Bash: 
     
     > source ./env/bin/activate
-5. Install required packages
+5. Установите необходимые зависимости
     > pip install -r requirements.txt
-6. Run application
+6. Запускайте приложение
     > flask run
